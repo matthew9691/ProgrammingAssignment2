@@ -21,11 +21,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## cacheSolve
-## this is supposed to compute the inverse of special "matrix" 
+## this computes the inverse of special "matrix" 
 ## returned by the makeCacheMatrix formula. If the inverse 
 ## has already been calculated, and the matrix is unchanged, then the 
-## inverse is retrieved from the cache - unfortunately the retrieval parts 
-## doesn't seem to work as anticipated.
+## inverse is retrieved from the cache.
 
 cacheSolve <- function(x, ...) {
         m <- x$getInverse()
